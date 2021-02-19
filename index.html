@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+        <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+    <title>Softwise Coding Challenge</title>
+</head>
+
+<body>
+    <!-- NAV BAR -->
+    <nav class="navbar">
+        <img class='mx-auto pt-2 pb-2' src="./images/logo.png" alt="WC3 Logo">
+    </nav>
+    <div class="box-container">
+        <div class="container text-center box-title pt-2 pb-5">Please enter the following information</div>
+        <div class="box-contents container">
+            <form>
+                <div class="row mt-5 mb-3">
+                    <div class="col-md-4 text-right mr-2 form-labels">ssn (last 4) xxx-xx-</div>
+                    <div class="col-md-7">
+                        <input oninput="this.value=this.value.slice(0,this.maxLength)" class="form-control" type="number" id="number-input" placeholder="xxxx" maxlength="4">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 text-right mr-2 form-labels">date of birth</div>
+                    <div class="col-md-7">
+                        <input class="form-control" placeholder='mm/dd/yyyy' type="date" id="date-input">
+                    </div>
+                </div>
+                <div class="row mt-4 float-right mr-5 submit-container">
+                    <input type="submit" id="submit" disabled>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

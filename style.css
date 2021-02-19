@@ -1,0 +1,138 @@
+body {
+    background-color: #f1f2f3;
+}
+
+.navbar {
+    background-color: #FFF !important;
+    border-radius: 0px 0px 15px 15px;
+    box-shadow: 0px 0px 10px rgb(214, 214, 214);
+    margin-bottom: 6rem;
+}
+
+.box-container {
+    border-radius: 15px;
+    width: 42rem;
+    height: 23rem;
+    background-color: #FFF;
+    margin: auto;
+    -moz-box-shadow: 0 2px 10px rgb(214, 214, 214);
+    -webkit-box-shadow: 0 2px 10px rgb(214, 214, 214);
+    box-shadow: 0 2px 10px rgb(214, 214, 214);
+}
+
+.box-title {
+    border-radius: 15px 15px 0 0;
+    color: #2973af;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 2.2rem;
+    font-weight: bold;
+    border-bottom: 1px solid rgb(214, 214, 214);
+}
+
+.box-contents {
+    border-top: 3px #f1f2f3 solid;
+}
+
+.col-md-4 {
+    padding: 0px !important;
+}
+
+.col-md-7 {
+    padding: 0px !important;
+}
+
+.form-control{
+    width: 80% !important;
+    height: calc(1em + .75rem + 2px) !important;
+    color: rgb(182, 182, 182);
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.form-labels {
+    color: rgb(194, 194, 194);
+    font-size: 20px;
+    font-weight: 100;
+}
+
+#submit {
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    width: 120px;
+    height: 40px;
+    border-radius: 25px;
+    position: relative;
+    top: 20px;
+    outline: none;
+}
+
+
+input[type="submit" i] {
+    background-color: #a1c55b;
+    border: 1px solid #717a5e;
+    box-shadow: 0 4px 0px #717a5e;
+}
+
+input[type="submit" i]:disabled {
+    background-color: #edf0ed;
+    border: 1px solid #d9e2db;
+    box-shadow: 0 4px 0px #d9e2db;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+@media (max-width: 767px) {
+    .box-title {
+        font-size: 1.5rem;
+        border-bottom: none;
+        padding-bottom: 0px !important;
+        padding-top: 1.5rem !important;
+    }
+
+    .form-labels{
+        text-align: center !important;
+    }
+
+    .form-control {
+        text-align: center !important;
+        margin: auto;
+    }
+
+    .box-container{
+        width: 90vw;
+    }
+
+    .box-contents {
+        border-top: none;
+    }
+
+    .submit-container {
+        float: none !important;
+        justify-content: center;
+        margin-right: 0px !important;
+        margin-left: 0px !important;
+    }
+
+    input[type="date" i]{
+        padding-left: 60px
+    }
+}
+
+@media (max-width: 281px) {
+    .box-title{
+        font-size: 1rem;
+    }
+    input[type="date" i]{
+        padding-left: 48px
+    }
+}
