@@ -128,6 +128,12 @@ input[type=number] {
     }
 }
 
+@media (max-width: 473px) {
+    .box-container{
+        height: 23.5rem;
+    }
+}
+
 @media (max-width: 281px) {
     .box-title{
         font-size: 1rem;
